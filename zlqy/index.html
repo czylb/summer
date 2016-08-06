@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div class="wholeContainer">
+        <div class="left"><!-- 左边的二维码 -->
+            <img src="images/leftplan.png" class="lepl">
+            <img src="images/zscy.png" class="leer">
+        </div>
+        <div class="right"><!-- 右边的二维码 -->
+            <img src="images/rightplan.png" class="ripl">
+            <img src="images/xbs.png" class="rier">
+        </div>
+        <nav><!-- 顶部导航栏 -->
+            <div class="navCon">
+                <img src="images/logo.png" height="46" width="190" alt=".">
+                <div class="list">
+                    <a href="index.html" class="show">首页</a>
+                    <a href="#">游子攻略</a>
+                    <a href="#">重邮风采</a>
+                    <a href="#">邮子数据</a>
+                    <a href="#">学长帮帮忙</a>
+                    <a href="#">关于我们</a>
+                    <span>
+                        <p id="log">新生登录</p>
+                        <div id="mengban"><!-- 蒙版 -->
+                            <div id="signin"></div><!-- 登录框 -->
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <div class="time"><!-- 倒计时 -->
+            <div class="timeCon">
+                <div class="timer">
+                    <div class="wholeTim">
+                        <div id="day">
+                            <span class = "animate" id="daysw"></span><!-- 十位 -->
+                            <span class = "animate" id="daygw"></span><!-- 个位 -->
+                        </div>
+                        <div id="hour">
+                            <span class = "animate" id="hoursw"></span><!-- 十位 -->
+                            <span class = "animate" id="hourgw"></span>
+                        </div>  
+                        <div id="minute">
+                            <span class = "animate" id="minsw"></span><!-- 十位 -->
+                            <span class = "animate" id="mingw"></span>
+                        </div>
+                        <div id="second">
+                            <span class = "animate" id="secsw"></span><!-- 十位 -->
+                            <span class = "animate" id="secgw"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mapWhole">
+            <div class="mapLabel">
+                <img src="images/labelmapWord.png">
+            </div>
+            <div class="mapContainer">
+                <div class="kuang"></div>
+                <div id="inner">
+                    <i class="iconfont" id="oldlib">&#xe64f;</i>
+                    <i class="iconfont" id="taiji">&#xe64f;</i>
+                    <i class="iconfont" id="laocao">&#xe64f;</i> 
+                    <i class="iconfont" id="bashiwan">&#xe64f;</i> 
+                    <i class="iconfont" id="qrp">&#xe64f;</i>
+                    <i class="iconfont" id="xk">&#xe64f;</i>
+                    <i class="iconfont" id="fengyu">&#xe64f;</i>
+                    <i class="iconfont" id="wudong">&#xe64f;</i>
+                    <i class="iconfont" id="shutu">&#xe64f;</i>
+                    <i class="iconfont" id="yf">&#xe64f;</i>
+                    <i class="iconfont" id="newgate">&#xe64f;</i>
+                    <i class="iconfont" id="erjiao">&#xe64f;</i>
+                    <i class="iconfont" id="sijiao">&#xe64f;</i>
+                    <i class="iconfont" id="sanjiao">&#xe64f;</i>
+                    <i class="iconfont" id="bajiao">&#xe64f;</i>
+                    <div class="place" id="move">老图书馆</div>
+                    <div class="suofang">
+                        <div id="jia">
+                            <i class="sficon">&#xe622;</i>
+                        </div>
+                        <div id="jian">
+                            <i class="sficon">&#xe6cc;</i>
+                        </div>
+                    </div>
+                    <div id="mapBanner">
+                        <div id="close">
+                            <i class="clo">&#xe652;</i>
+                        </div>
+                        <div class="picWhole">
+                            <div id="picCon"><!-- 图片轮播外框 -->
+                                <div id="pre"><i class="iconba">&#xe8b1;</i></div>
+                                <div id="next"><i class="iconba">&#xe624;</i></div>
+                                <div id="slider">
+                                    <div class="same"><img src="images/library.png"></div>
+                                    <div class="same"><img src="images/library.png"></div>
+                                    <div class="same"><img src="images/library.png"></div>
+                                    <div class="same"><img src="images/library.png"></div>
+                                    <div class="same"><img src="images/library.png"></div>
+                                    <div class="same"><img src="images/library.png"></div>
+                                    <div class="same"><img src="images/library.png"></div>
+                                    <div class="same"><img src="images/library.png"></div>
+                                    <div class="same"><img src="images/library.png"></div>
+                                    <div class="same"><img src="images/library.png"></div>
+                                    <div class="same"><img src="images/library.png"></div>
+                                    <div class="same"><img src="images/library.png"></div>
+                                    <div class="same"><img src="images/library.png"></div>
+                                    <div class="same"><img src="images/library.png"></div>
+                                    <div class="same"><img src="images/library.png"></div>
+                                </div> 
+                            </div>
+                            <div>
+                                <p id="biaoti"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="midContent">
+            <div class="midContainer">
+                <div class="midTop"> <!-- 三个旗子 -->
+                    <div class="topLabel" id="la1">
+                        <img src="images/yzgl.png">
+                    </div>
+                    <div class="topLabel" id="la2">
+                        <img src="images/yzsj.png">
+                    </div>
+                    <div class="topLabel" id="la3">
+                        <img src="images/cyfc.png" id="fc">
+                    </div>
+                </div>
+                <div class="midBot">
+                    <div class="midCon">
+                        <img src="images/chahua1.png">
+                        <div class="pra" id="pra1">
+                            <p>提供给新生们火车站，机场等到学校</p>
+                            <p>的公交车路线以及打车的大致费用、</p>
+                            <p>寝室条件、必备清单、新生群、老乡</p>
+                            <p>群、班级群、学校周边银行、超市、</p>
+                            <p>美食美景等信息。</p>
+                        </div>
+                        <div class="button" id="button1">
+                           <a href="#">了解更多</a>
+                        </div>
+                    </div>
+                    <div class="midCon">
+                        <img src="images/chahua2.png">
+                        <div class="pra" id="pra2">
+                            <p>无论是寻找志同道合的朋友，各专业</p>
+                            <p>男女比例，各专业就业情况，还是同</p>
+                            <p>年同日，同乡比例，寝室信息等等。</p>
+                            <p>你想要知道的，都在这里。</p>
+                        </div>
+                        <div class="button" id="button2">
+                           <a href="#">了解更多</a>
+                        </div>
+                    </div>
+                    <div class="midCon">
+                        <img src="images/chahua3.png">
+                        <div class="pra" id="pra3">
+                            <p>这里有优秀教师和邮子的风采展示，</p>
+                            <p>各大校级学生组织的简介，更有精美</p>
+                            <p>照片与精彩原创视频。</p>
+                        </div>
+                        <div class="button" id="button3">
+                           <a href="#">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sister"><!-- 学姐知道 -->
+            <div class="sisContent">
+                <div class="sislabel"><!-- 小旗子 -->
+                    <img src="images/xjzd.png">
+                </div>
+                <div class="sisbot">
+                    <div class="sispra">
+                        <p>想了解更多关于学校的日常？想提前了解自己的专业？或者有其他方面的问题，</p>
+                        <p>想了解更多关于学校的日常？想提前了解自己的专业？或者有其他方面的问题，</p>
+                        <div class="button" id="button2">
+                            <a href="#">了解更多</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="redrock"><!-- 关于我们 -->
+            <div class="redContent">
+                <div class="redlabel"><!-- 小旗子 -->
+                    <img src="images/about.png" id="ab">
+                </div>
+                <div class="redbot">
+                    <div class="logo">
+                        <img src="images/redlogo.png">
+                    </div>
+                    <div class="redpra">
+                        <p>红岩网校工作站简介。优秀内网展示、以及各种迎新活动专题。我们一直在努</p>
+                        <p class="ple">力哈俄我记得。</p>
+                        <div class="button">
+                            <a href="#">了解更多</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="return">
+            <img src="images/return.png">
+        </a>
+        <div class="footer"><!-- 底部 -->
+            <div class="lastword">
+                <div class="lasta">
+                    <a href="#">关于红岩网校</a><span>|</span>
+                    <a href="#">网站地图</a><span>|</span>
+                    <a href="#">指出错误</a><span>|</span>
+                    <a href="#">管理入口</a>
+                </div>
+                <p>本网站由红岩网校工作站负责开发，管理，不经红岩网校委员会书面同意，不得进行转载</p>
+                <p>地址：重庆市南岸区崇文路2号（重庆邮电大学内） 400065 E-mail :redrock@cqupt.edu.cn (023-62461084)</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/return.js"></script><!-- 返回顶部 -->
+<script type="text/javascript" src="js/main.js"></script><!-- //倒计时 -->
+</html>

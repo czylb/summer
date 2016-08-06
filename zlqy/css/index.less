@@ -1,0 +1,758 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../icon/iconfont.eot'); /* IE9*/
+    src: url('../icon/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../icon/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../icon/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../icon/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+@width: 1030px;
+body,
+div,
+span,
+a,
+img,
+p {
+    margin : 0;
+    padding : 0;
+    font-family: "微软雅黑","冬青黑";
+    background-repeat: no-repeat;
+}
+a {
+   text-decoration: none;
+}
+.wholeContainer{
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 3440px;
+    background-image: url(../images/back.png);
+}
+nav {
+    min-width: @width;
+    height: 60px;
+    background-color: #FFFFFF;
+    .navCon {
+        margin: 0 auto;
+        width: @width;
+        height: 60px;
+        img {
+            margin-top: 7px;
+        }
+        .list {
+            float: right;
+            height: 60px;
+            width: 720px;
+            .show{
+                color:#82CB83; 
+            }
+            a{
+                box-sizing: border-box;
+                display: block;
+                float: left;
+                height: 60px;
+                width: 102px;
+                font-size: 18px;
+                color: black;
+                line-height: 60px;
+                text-align: center;
+            }
+            a:hover {
+                cursor: pointer;
+                color: #82CB83;
+                border-bottom: 5px solid #82CB83;
+            }
+            a:first-child {
+                border-bottom: 5px solid #82CB83;
+            }
+            span {
+                display: block;
+                line-height: 60px;
+                text-align: center;
+                font-size: 16px;
+                cursor: pointer;
+                color: #FD9907;
+                #mengban {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 3440px;
+                    background-color:black;
+                    opacity: 0.3; 
+                    z-index: 1000;
+                }
+            }
+            span:hover {
+                font-size: 14px;
+            }
+        }
+
+    }
+}
+.left {
+    position: fixed;
+    top: 100px;
+    left: 18px;
+    width: 177px;
+    z-index: 1000;
+    .lepl {
+        float: left;
+    }
+    .leer {
+        float: right;
+    }
+}
+.right {
+    position: fixed;
+    top: 100px;
+    right: 18px;
+    width: 177px;
+    z-index: 1000;
+    .ripl {
+        float: right;
+    }
+    .rier {
+        float: left;
+    }
+}
+.time {
+    min-width: @width;
+    height: 750px;
+    .timeCon {
+        margin: 0 auto;
+        margin-top: 37px;
+        width: @width;
+        height: 750px;
+        background-image: url(../images/timeback.png);
+        .timer {
+            margin: 0 auto;
+            position: relative;
+            top: 392px;
+            left: 15px;
+            width: 587px;
+            height: 34px;
+            background-image: url(../images/timeword.png);
+            .wholeTim {
+                margin-left: 134px;
+                width: 406px;
+                height: 34px; 
+                .animate {
+                    transition: background-position 1s;
+                }
+                div {
+                    float: left;
+                    width: 50px;
+                    height: 30px;
+                    span {
+                        display: block;
+                        float: left;
+                        width: 25px;
+                        height: 30px;
+                    }
+                }
+                #day {
+                    margin-left: 50px;
+                }
+                #hour {
+                    margin-left: 48.5px;
+                }
+                #minute {
+                    margin-left: 55px;
+                }
+                #second {
+                    margin-left: 51px;
+                }
+                #daysw {
+                    background-image: url(../images/number.png);
+                    background-position: 0px 0px;
+                }
+                #daygw {
+                    background-image: url(../images/number.png);
+                }
+                #hoursw {
+                    background-image: url(../images/number.png);
+                }
+                #hourgw {
+                    background-image: url(../images/number.png);
+                }
+                #minsw {
+                    background-image: url(../images/number.png);
+                }
+                #mingw {
+                    background-image: url(../images/number.png);
+                }
+                #secsw {
+                    background-image: url(../images/number.png);
+                }
+                #secgw {
+                    background-image: url(../images/number.png);
+                }
+            }
+        }
+    }
+}
+.mapWhole {
+    margin: 0 auto;
+    margin-top: -110px;
+    width: @width;
+    height:630px;
+    .mapLabel {
+        margin: 0 auto;
+        width: 219px;
+        height: 110px;
+        background-image: url(../images/label.png);
+        img {
+         position: relative;
+         top: 19px;
+         left: 23px;
+        } 
+    }
+    .mapContainer {
+        position: relative;
+        margin: 0 auto;
+        margin-top:-30px; 
+        width: @width;
+        height:554px;
+        overflow: hidden;
+        .kuang {
+            position: absolute;
+            width: @width;
+            height:554px;
+            background-image: url(../images/map-t.png);
+        }
+        #inner {
+           margin: 0 auto;
+           margin-top: 22px; 
+           width:984px;
+           height: 500px;
+           background: transparent url(../images/map.png) center center no-repeat;
+           .iconfont {
+                font-size: 40px;
+                color: #FB8D05;
+                opacity: 1;
+                cursor: pointer;
+           }
+           #oldlib{
+                position: relative;
+                top: 44%;
+                left: 50%;
+           }
+           #taiji{
+                position: relative;
+                top: 12%;
+                left: 33%;
+           }
+            #laocao{
+                position: relative;
+                top: 34%;
+                left: 29%;
+           }
+            #bashiwan{
+                position: relative;
+                top: 60%;
+                left: 26%;
+           }
+           #qrp {
+                position: relative;
+                top: 46%;
+                left: 38%;
+           }
+            #xk {
+                position: relative;
+                top: 62%;
+                left: 27%;
+           }
+            #fengyu {
+                position: relative;
+                top: 21%;
+                left: 2%;
+           }
+            #wudong {
+                position: relative;
+                top: 25%;
+                left: 9.5%;
+           }
+            #shutu {
+                position: relative;
+                top: 50%;
+                left: -11%;
+           }
+            #yf {
+                position: relative;
+                top: 33%;
+                left: -24%;
+           }
+           #newgate{
+                position: relative;
+                top: 63%;
+                left: -24.5%;
+           }
+            #erjiao {
+                position: relative;
+                top: 44%;
+                left: -8%;
+           }
+            #sijiao {
+                position: relative;
+                top: 20%;
+                left: -39%;
+           }
+            #sanjiao {
+                position: relative;
+                top: 14%;
+                left: -39%;
+           }
+            #bajiao {
+                position: relative;
+                top: 0%;
+                left: -44%;
+           }
+           .place {
+                position: absolute;
+                top: 350px;
+                left: 483px;
+                transition: top 1s,left 1s;
+                width:100px;
+                height:40px;
+                background-color: white;
+                opacity: 0.9;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 30px;
+                font-size: 16px; 
+                cursor: pointer;
+            }
+            #mapBanner {
+                position: absolute;
+                top: 600px;
+                transition: top 1s;
+                margin-left: 230px;
+                width: 520px;
+                height: 360px;
+                background-color:#FFFEF1;
+                border-radius: 10px;
+                #close {
+                    position: absolute;
+                    left: 497px;
+                    top: -18px;
+                    width: 43px;
+                    height:43px;
+                    border-radius: 43px;
+                    background-color:#FFEC96;
+                    .clo {
+                        font-family:"iconfont" !important;
+                        font-style:normal;
+                        -webkit-font-smoothing: antialiased;
+                        -webkit-text-stroke-width: 0.2px;
+                        -moz-osx-font-smoothing: grayscale;
+                        font-size: 36px;
+                        cursor: pointer; 
+                        line-height: 34px;
+                        margin-left: 4.5px;
+                        color: #F88206;
+                    }
+                    .clo:hover {
+                        font-size: 34px;
+                        margin-left: 5.5px;
+                    }
+                }
+                .picWhole {
+                    margin: 0 auto;
+                    width: 465px;
+                    height: 330px;
+                    margin-top: 30px;
+                    #picCon {
+                        position: relative;
+                        width: 465px;
+                        height: 187px;
+                        overflow: hidden;
+                        .iconba {
+                            font-family:"iconfont" !important;
+                            font-style:normal;
+                            -webkit-font-smoothing: antialiased;
+                            -webkit-text-stroke-width: 0.2px;
+                            -moz-osx-font-smoothing: grayscale;
+                            font-size: 36px;
+                            cursor: pointer; 
+                            line-height: 63px;
+                            margin-left: 4.5px;
+                            color: #FFFFFF;
+                        }
+                        .iconba:hover {
+                            font-size: 37px;
+                        }
+                        #pre {
+                            z-index: 1000;
+                            position: absolute;
+                            top: 60px;
+                            width: 46px;
+                            height: 63px;
+                            background: black;
+                            opacity: 0.6;
+                        }
+                        #next {
+                            z-index: 1000;
+                            position: absolute;
+                            top: 60px;
+                            left: 419px;
+                            width: 46px;
+                            height: 63px;
+                            background-color:black;
+                            opacity: 0.6;
+                        }
+                        #slider {
+                            position: absolute;
+                            left:0px;
+                            transition: left 1s;
+                            width: 6975px;
+                            .same {
+                                float:left;
+                                width: 465px;
+                                height: 187px;
+                            }
+                        }
+                    }
+                }
+            }
+            .suofang {
+                position: absolute;
+                top: 420px;
+                left: 950px;
+                width: 38px;
+                height: 84px;
+                div {
+                    width: 38px;
+                    height: 38px;
+                    border-radius: 38px;
+                    background-color: white;
+                    opacity: 0.7;
+                    }
+                .sficon {
+                    font-family:"iconfont" !important;
+                    font-style:normal;
+                    -webkit-font-smoothing: antialiased;
+                    -webkit-text-stroke-width: 0.2px;
+                    -moz-osx-font-smoothing: grayscale;
+                    font-size: 28px;
+                    cursor: pointer; 
+                    line-height: 38px;
+                    margin-left: 5px;
+                }
+                .sficon:hover {
+                    font-size: 27px;
+                    margin-left: 6px;
+                }
+                #jia {
+                    color: #2AB0E0;
+                }
+                #jian {
+                    margin-top: 8px;
+                    color: #EF7F07
+                }
+            }
+        }
+    }
+}
+.midContent {
+    margin: 0 auto;
+    margin-top: 145px;
+    min-width: @width;
+    height: 625px;
+    .midContainer {
+        margin: 0 auto;
+        width: @width;
+        height: 625px;
+        .midTop {
+            margin: 0 auto;
+            width: 900px;
+            height: 105px;
+            .topLabel {
+                float: left;
+                width: 219px;
+                height: 110px;
+                background-image: url(../images/label.png);
+            }
+            #la1 {
+                img {
+                    position: relative;
+                    top: 22px;
+                    left: 23px; 
+                }
+            }
+            #la2 {
+                position: relative;
+                left: 120px;
+                img {
+                    position: relative;
+                    top: 21px;
+                    left: 23px; 
+                }
+            }
+            #la3 {
+                position: relative;
+                left: 240px;
+                img {
+                    position: relative;
+                    top: 20px;
+                    left: 23px; 
+                }
+            }
+        }
+        .midBot {
+            margin: 0 auto;
+            position: relative;
+            top: -25px;
+            width: @width;
+            height: 550px;
+            background-image: url(../images/midbotback.png);
+            background-repeat: no-repeat;
+            .midCon {
+                float: left;
+                margin-left: 25px;
+                width: 316px;
+                height: 550px;
+                img {
+                    margin-left: 75px;
+                    margin-top: 70px;
+                }
+                .pra {
+                    margin: 0 auto;
+                    width: 245px;
+                    height: 120px;
+                    p { 
+                        text-align: center;
+                        color: #666666;
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+                }
+                #pra1 {
+                    position: relative;
+                    top: -50px;
+                }
+                #pra2 {
+                    position: relative;
+                    top: -67px;
+                }
+                #pra3 {
+                    position: relative;
+                    top: 35px;
+                }
+                .button {
+                    width: 327px;
+                    height: 108px;
+                    margin-left: 50px;
+                    background-image: url(../images/buttonback.png);
+                    a {
+                        position: relative;
+                        top: 17px;
+                        left: 50px;
+                        color: white;
+                        font-size: 18px;
+                    }
+                    a:hover {
+                        font-size: 19px;
+                    }
+                }
+                #button1 {
+                    position: relative;
+                    top: -10px;
+                }
+                #button2 {
+                    position: relative;
+                    top: -30px;
+                }
+                #button3 {
+                    position: relative;
+                    top: 70px;
+                }
+            }
+        }
+    }
+}
+.sister {
+    margin: 0 auto;
+    margin-top: 133px;
+    min-width: @width;
+    height: 345px;
+    .sisContent {
+        margin: 0 auto;
+        width: @width;
+        height: 345px; 
+        .sislabel {
+            margin: 0 auto;
+            width: 219px;
+            height: 110px;
+            background-image: url(../images/label.png);
+            img {
+                position: relative;
+                top: 20px;
+                left: 22px;
+            }
+        }
+        .sisbot {
+            margin-top: -30px;
+            width:@width;
+            height: 257px;
+            background-repeat: no-repeat;
+            background-image: url(../images/sisback.png); 
+            .sispra {
+                float: right;
+                margin-top: 65px;
+                width: 610px;
+                height: 257px;
+                text-align: center;
+                p {
+                    font-size: 14px;
+                    line-height: 25px;
+                    color: #666666;
+                }
+            }
+            .button {
+                margin-left: 370px;
+                margin-top: 35px;
+                width: 327px;
+                height: 108px;
+                background-image: url(../images/buttonback.png);
+                a {
+                    position: relative;
+                    top: 17px;
+                    left: -72px;
+                    color: white;
+                    font-size: 18px;
+                }
+                a:hover {
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}
+.redrock {
+    margin: 0 auto;
+    margin-top: 45px;
+    min-width: @width;
+    height: 345px;
+    .redContent {
+        margin: 0 auto;
+        width: @width;
+        height: 345px; 
+        .redlabel {
+            margin: 0 auto;
+            width: 219px;
+            height: 110px;
+            background-image: url(../images/label.png);
+            img {
+                position: relative;
+                top: 10px;
+                left: 22px;
+            }
+        }
+        .redbot {
+            margin-top: -30px;
+            width:@width;
+            height: 257px;
+            background-repeat: no-repeat;
+            background-image: url(../images/redback.png); 
+            .logo {
+                position: relative;
+                top: 78px;
+                left: 35px;
+                width: 324px;
+                height: 82px;
+            }
+            .redpra {
+                float: right;
+                // margin-top: 65px;
+                width: 610px;
+                height: 257px;
+                text-align: center;
+                p {
+                    font-size: 14px;
+                    line-height: 25px;
+                    color: #666666;
+                }
+                .ple {
+                    float: left;
+                    margin-left: 66px;
+                }
+            }
+            .button {
+                margin-left: 370px;
+                margin-top: 35px;
+                width: 327px;
+                height: 108px;
+                background-image: url(../images/buttonback.png);
+                a {
+                    position: relative;
+                    top: 17px;
+                    left: -72px;
+                    color: white;
+                    font-size: 18px;
+                }
+                a:hover {
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}
+#return {
+    margin: 0 auto;
+    width: @width;
+    img {
+        position: relative;
+        top: 100px;
+        left: 1180px;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    img:hover {
+        top: 95px;
+        opacity: 1;
+    }
+}
+.footer {
+    margin: 0 auto;
+    margin-top: 140px;
+    min-width: @width;
+    height: 180px;
+    background-color: #FFFDE7;
+    .lastword {
+        margin: 0 auto;
+        position: relative;
+        top: 60px;
+        height: 61px;
+        width: 715px;
+        .lasta {
+            margin: 0 auto;
+            width: 300px;
+            a {
+                font-size: 14px;
+                color: #eda62b;
+            }
+            span {
+                position: relative;
+                left: 3px;
+                color: #eda62b;
+            } 
+            a:hover {
+                color: #FA713E;
+            }
+        }
+        p { 
+            text-align: center;
+            font-size: 14px;
+            color: #eda62b;
+            line-height: 25px;
+        }
+    }
+}
