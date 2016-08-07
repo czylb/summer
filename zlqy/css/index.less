@@ -200,6 +200,7 @@ nav {
     }
 }
 .mapWhole {
+    position: relative;
     margin: 0 auto;
     margin-top: -110px;
     width: @width;
@@ -217,127 +218,129 @@ nav {
     }
     .kuang {
             position: absolute;
+            margin-top: -30px;
             z-index: 500;
             width: @width;
             height:547px;
             background-image: url(../images/map-t.png);
-        }
+    }
     .mapContainer {
         position: relative;
+        top: -30px;
         margin: 0 auto; 
         width: 980px;
         height:523px;
         overflow: hidden;
         #inner {
-           margin: 0 auto;
-           margin-top: 23px; 
-           width:980px;
-           height: 532px;
-           background-image: url(../images/map.png);
-           background-size:100% 100%;
-           transform-origin: 50% 50%;
-           .iconfont {
+            margin: 0 auto;
+            margin-top: 23px; 
+            width:980px;
+            height: 532px;
+            background-image: url(../images/map.png);
+            background-size:100% 100%;
+            transform-origin: 50% 50%;
+            .iconfont {
                 font-size: 40px;
                 color: #FB8D05;
                 opacity: 1;
                 cursor: pointer;
-           }
-           #oldlib{
+            }
+            #oldlib{
                 z-index: 1000;
                 position: relative;
                 top: 50%;
                 left: 50%;
-           }
-           #taiji{
+            }
+            #taiji{
                 z-index: 1000;
                 position: relative;
                 top: 23%;
                 left: 32%;
-           }
+            }
             #laocao{
                 z-index: 1000;
                 position: relative;
                 top: 40%;
                 left: 29%;
-           }
+            }
             #bashiwan{
                 z-index: 1000;
                 position: relative;
                 top: 60%;
                 left: 26%;
-           }
-           #qrp {
+            }
+            #qrp {
                 z-index: 1000;
                 position: relative;
                 top: 52%;
                 left: 36%;
-           }
+            }
             #xk {
                 z-index: 1000;
                 position: relative;
                 top: 68%;
                 left: 27%;
-           }
+            }
             #fengyu {
                 z-index: 1000;
                 position: relative;
                 top: 31%;
                 left: 2%;
-           }
+            }
             #wudong {
                 z-index: 1000;
                 position: relative;
                 top: 35%;
                 left: 9.5%;
-           }
+            }
             #shutu {
                 z-index: 1000;
                 position: relative;
                 top: 50%;
                 left: -11%;
-           }
+            }
             #yf {
                 z-index: 1000;
                 position: relative;
                 top: 39%;
                 left: -24%;
-           }
-           #newgate{
+            }
+            #newgate{
                 z-index: 500;
                 position: relative;
                 top: 60%;
                 left: -24.5%;
-           }
+            }
             #erjiao {
                 z-index: 1000;
                 position: relative;
                 top: 49%;
                 left: -8%;
-           }
+            }
             #sijiao {
                 z-index: 1000;
                 position: relative;
                 top: 30%;
                 left: -39%;
-           }
+            }
             #sanjiao {
                 z-index: 1000;
                 position: relative;
                 top: 24%;
                 left: -39%;
-           }
+            }
             #bajiao {
                 z-index: 1000;
                 position: relative;
                 top: 12%;
                 left: -44%;
-           }
+            }
            #chqs {
                 z-index: 1000;
                 position: relative;
                 top: 55%;
                 left: -23%;
-           }
+            }
            .place {
                 z-index: 1000;
                 position: absolute;
@@ -447,22 +450,22 @@ nav {
                         }
                     }
                     .enter {
-                            margin:0 auto;
-                            width: 465px;
-                            height: 130px;
-                            margin-top: 20px;
-                            // background-color: red;
-                            #biaoti {
-                                text-align: center;
-                                font-size: 18px;
-                            }
-                            #pa {
-                                margin-top: 12px;
-                                font-size:12px;
-                                color: #666666;
-                                line-height: 25px; 
-                            }
+                        margin:0 auto;
+                        width: 465px;
+                        height: 130px;
+                        margin-top: 20px;
+                        // background-color: red;
+                        #biaoti {
+                            text-align: center;
+                            font-size: 18px;
                         }
+                        #pa {
+                            margin-top: 12px;
+                            font-size:12px;
+                            color: #666666;
+                            line-height: 25px; 
+                        }
+                    }   
                 }
             }
             .suofang {
