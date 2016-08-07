@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>重邮风采</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div class="wholeContainer">
+        <div class="left"><!-- 左边的二维码 -->
+            <img src="images/leftplan.png" class="lepl">
+            <img src="images/zscy.png" class="leer">
+        </div>
+        <div class="right"><!-- 右边的二维码 -->
+            <img src="images/rightplan.png" class="ripl">
+            <img src="images/xbs.png" class="rier">
+        </div>
+        <nav><!-- 顶部导航栏 -->
+            <div class="navCon">
+                <img src="images/logo.png" height="46" width="190" alt=".">
+                <div class="list">
+                    <a href="index.html">首页</a>
+                    <a href="#">游子攻略</a>
+                    <a href="index.html" class="cqfc">重邮风采</a>
+                    <a href="#">邮子数据</a>
+                    <a href="#">学姐知道</a>
+                    <a href="#">关于我们</a>
+                    <span>
+                        <p id="log">新生登录</p>
+                        <div id="mengban"><!-- 蒙版 -->
+                            <div id="signin"></div><!-- 登录框 -->
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <div class="time"><!-- 倒计时 -->
+            <div class="timeCon">
+                <div class="timer">
+                    <div class="wholeTim">
+                        <div id="day">
+                            <span class="animate" id="daysw"></span><!-- 十位 -->
+                            <span class="animate" id="daygw"></span><!-- 个位 -->
+                        </div>
+                        <div id="hour">
+                            <span class="animate" id="hoursw"></span><!-- 十位 -->
+                            <span class="animate" id="hourgw"></span>
+                        </div>  
+                        <div id="minute">
+                            <span class="animate" id="minsw"></span><!-- 十位 -->
+                            <span class="animate" id="mingw"></span>
+                        </div>
+                        <div id="second">
+                            <span class="animate" id="secsw"></span><!-- 十位 -->
+                            <span class="animate" id="secgw"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="cqdisplay">
+           <div class="cqdisflag">        
+               <img class="flagbang" src="images/label.png">      
+               <img class="flagword" src="images/cyfc.png">              
+           </div>
+           <div class="cqdiscont">
+               <div class="cqdis-main">
+                   <ul id="cqdis-lister">
+                       <li class="cqdis-list" id="cqdis-list-left"><a href="##" class="cqdis-info" id="orgfour-first">学生组织</a></li>
+                       <li class="cqdis-list"><a href="##" class="cqdis-info">宣传视频</a></li>
+                       <li class="cqdis-list"><a href="##" class="cqdis-info">优秀学子</a></li>
+                       <li class="cqdis-list" id="cqdis-list-right"><a href="##" class="cqdis-info">优秀教师</a></li>
+                   </ul>
+                   <div class="fourtitle-lunbo">
+                       <!-- 学生组织模块 -->
+                       <div class="student-org">
+                            <div class="org">
+                               <div class="orgthree" id="schoolOrg">
+                                   <a href="##" class="orgthreeInfo" id="orgthree-first">校级组织</a>
+                               </div>
+                               <div class="orgthree" id="stuTeam">
+                                   <a href="##" class="orgthreeInfo">学生社团</a>
+                               </div>
+                               <div class="orgthree" id="REDrock">
+                                   <a href="##" class="orgthreeInfo">红岩网校</a>
+                               </div>
+                           </div>
+                           <div class="orgthreeDis">
+                              <!-- 红岩网校模块 -->
+                              <div class="orgredRock">
+                                   <div class="redRockimg">
+                                       <img src="./images/redRock.png" class="redRock">
+                                   </div>
+                                   
+                                   <div class="rockwordline">
+                                       <div class="rockword">
+                                           <span class="rockword-title">红岩网校工作站:</span>
+                                           <span class="redRockword">这是一个校园互联网开发团队。于2000年创建，至今已有15个年头的历史，它由一群志趣相投的在校大学生共同组建，自我管理，自主运营。多年来培养了一大批IT人才，无不成为行业顶尖精英。全体红岩人通力合作，策划、设计、Web、移动、运营环环紧扣，推出了BT Down铺、重邮小帮手、掌上重邮、二手市场等一系列优秀校园互联网产品，迎合广大师生需求，获得一致好评。</span>
+                                       </div>
+                                   </div>     
+                               </div>
+                                <!-- 学生社团 -->
+                               <div class="orgstuTeam">
+                                   <div class="orgstuLine">
+                                        <div class="orgteam-box">
+                                            
+                                        </div>
+                                        <div class="orgteam">
+                                            <div class="orgteamLeft">
+                                                <span class="orgstuTitle stuskill">实践技能类（28个）：</span>
+                                                <span class="orgstuTitle stustudy">
+                                                    理论学习类&nbsp（ 9个）：
+                                                </span>
+                                                <span class="orgstuTitle stuart">
+                                                    文艺拓展类（27个）：
+                                                </span>
+                                                <span class="orgstuTitle stupe">
+                                                    体育竞技类（12个）：
+                                                </span>
+                                                <span class="orgstuTitle stuserver">
+                                                    公益服务类（12个）：
+                                                </span>
+                                            </div>
+                                            <div class="orgteamRight">
+                                                <span class="orgstuCont">电子协会、通信软件协会、电子竞技协会、信息安全协会、3S协会、软件技术与应用协会、硬件技术与应用协会、Linux协会、机器人协会、推理协会、科幻协会、半导体协会、科技创新协会 、文爱好者协会、电子市场营销协会、ERP协会、政法论坛协会、辩论协会、闪客协会、数字媒体协会、数学建模协会、航模协会、数码协会、TG精英社。
+                                               </span>
+                                               <span class="orgstuCont">
+                                                   科技论文讲习社、生命科学协会、数学俱乐部、翻译协会、CSDN俱乐部、舆论与传播协会、红色社团、历史协会、物理协会。
+                                               </span>
+                                               <span class="orgstuCont">
+                                                   象棋协会、东方舞蹈协会、桌游协会、饮食文化协会、兰亭书社、中国传统文化交流协会、动漫协会、南山文学社、摄影协会、电影协会、重邮剧社、音乐协会、民族乐器协会、街舞协会、瑜伽协会、西乐社、龙影棍道协会、外文剧社、英语俱乐部、b-box协会、骆驼社、诵读协会、天元围棋协会、吉他社、百闻茶道社、魔方社、汉韵新樱协会。
+                                               </span>
+                                               <span class="orgstuCont">
+                                                   足球协会、篮球协会、武术协会、乒乓球协会、网球协会、羽毛球协会、柔道协会、健美操协会、跆拳道协会、健身健美协会、体育舞蹈协会、素质拓展协会。
+                                               </span>
+                                               <span class="orgstuCont">
+                                                   网络志愿者协会、识途社、爱心社、心理协会、国防教育协会、坚守者协会、动物保护协会、三农协会、大学生消费者协会、就业与公共关系协会、学生消防志愿者协会。
+                                               </span>
+                                            </div>                                       
+                                       </div>
+                                   </div>
+                                  
+                               </div> 
+                               <!-- 校级组织 -->  
+                               <div class="orgSchool">
+                                   <div class="orgschoolLeft">
+                                       <ul>
+                                           <li class="orgschoolList" id="tuanwei"> 团委直属部门</li>
+                                           <li class="orgschoolList" id="xiaoxuesheng">校学生会</li>
+                                           <li class="orgschoolList" id="kelian">科技联合会</li>
+                                           <li class="orgschoolList" id="shetuan">社团联合会</li>
+                                           <li class="orgschoolList" id="qingxie">青年志愿者协会</li>
+                                           <li class="orgschoolList" id="dayituan">大学生艺术团</li>
+                                       </ul>
+                                   </div>
+                                   <div class="orgschoolRight">
+                                       <div class="redRockimg">
+                                           <div class="xueshenghuiImg">
+                                               
+                                           </div>
+                                       </div>
+                                       
+                                       <div class="schoolwordline">
+                                           <div class="schoolword">
+                                               <span class="schoolwordTitle">部门简介：</span>
+                                               <span class="schoolwordCont">重庆邮电大学学生会是在中国共产党领导下的重庆邮电大学全体在籍的全日制本科生和专科生的群众性组织。本会作为团体会员参加中华全国学生联合会和重庆市学生联合会，承认并遵守《中华全国学生联合会章程》及《重庆市学生联合会章程》，现为重庆市学生联合会副主席单位。</span>
+                                           </div>
+                                       </div>     
+                                   </div>
+                               </div>               
+                           </div>
+                       </div> 
+                       <!-- 宣传视频 -->
+                       <div class="develop-video">
+                           <div class="good-video-cont">
+                               <div class="button-left">
+                                   <img class="video-picture" src="./images/videoleftbut.png">
+                               </div>
+                               <div class="good-video-main">
+                                   <div class="video-box">
+                                       <div class="good-video-lunbo">
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                       </div>
+                                       <div class="good-video-lunbo">
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                       </div>
+                                       <div class="good-video-lunbo">
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                           <div class="eachvideo">
+                                               <img class="video-picture" src="./images/videoPic.png">
+                                               <span class="video-name">2015宣传视频</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                                <div class="button-right">
+                                    <img src="./images/videorightbut.png">
+                               </div>
+                           </div>                       
+                       </div>
+                      <!--  优秀学子 -->
+                       <div class="good-student">
+                           <div class="good-stu-cont">
+                               <div class="button-left">
+                                   <img class="student-picture" src="./images/studentleftbut.png">
+                               </div>
+                               <div class="good-student-main">
+                                   <div class="good-student-box">
+                                       <div class="good-student-lunbo">
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                            <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                            <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                       </div>
+                                       <div class="good-student-lunbo">
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                            <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                            <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                       </div>
+                                       <div class="good-student-lunbo">
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                           <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                            <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                            <div class="eachstudent">
+                                               <img class="student-picture" src="./images/studentPic.png">
+                                               <span class="student-name">张三</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                                <div class="button-right">
+                                    <img src="./images/studentrightbut.png">
+                               </div>
+                           </div>
+                       </div>
+                       <!-- 优秀教师 -->
+                       <div class="good-teacher">
+                           <div class="good-teacher-cont">
+                               <div class="button-left">
+                                   <img class="teachert-picture" src="./images/teacherleftbut.png">
+                               </div>
+                               <div class="good-teacher-main">
+                                    <div class="good-teacher-box">
+                                        <div class="good-teacher-lunbo">
+                                           <div class="eachteacher">
+                                               <img class="teacher-picture" src="./images/studentPic.png">
+                                               <span class="teacher-name">赵垚</span>
+                                           </div>
+                                           <div class="eachteacher">
+                                               <img class="teacher-picture" src="./images/studentPic.png">
+                                               <span class="teacher-name">赵垚</span>
+                                           </div>
+                                           <div class="eachteacher">
+                                               <img class="teacher-picture" src="./images/studentPic.png">
+                                               <span class="teacher-name">赵垚</span>
+                                           </div>
+                                           <div class="eachteacher">
+                                               <img class="teacher-picture" src="./images/studentPic.png">
+                                               <span class="teacher-name">赵垚</span>
+                                           </div>
+                                           <div class="eachteacher">
+                                               <img class="teacher-picture" src="./images/studentPic.png">
+                                               <span class="teacher-name">赵垚</span>
+                                           </div>
+                                           <div class="eachteacher">
+                                               <img class="teacher-picture" src="./images/studentPic.png">
+                                               <span class="teacher-name">赵垚</span>
+                                           </div>
+                                           <div class="eachteacher">
+                                               <img class="teacher-picture" src="./images/studentPic.png">
+                                               <span class="teacher-name">赵垚</span>
+                                           </div>
+                                           <div class="eachteacher">
+                                               <img class="teacher-picture" src="./images/studentPic.png">
+                                               <span class="teacher-name">赵垚</span>
+                                           </div>
+
+                                           <div class="eachteacher">
+                                               <img class="teacher-picture" src="./images/studentPic.png">
+                                               <span class="teacher-name">赵垚</span>
+                                           </div>
+                                       </div>
+                                    </div>
+
+                            
+                               </div>
+                                <div class="button-right">
+                                    <img src="./images/teacherrightbut.png">
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+       </div>
+        
+        
+        <a href="#" id="return">
+            <img src="images/return.png">
+        </a>
+        <div class="footer"><!-- 底部 -->
+            <div class="lastword">
+                <div class="lasta">
+                    <a href="#">关于红岩网校</a><span>|</span>
+                    <a href="#">网站地图</a><span>|</span>
+                    <a href="#">指出错误</a><span>|</span>
+                    <a href="#">管理入口</a>
+                </div>
+                <p>本网站由红岩网校工作站负责开发，管理，不经红岩网校委员会书面同意，不得进行转载</p>
+                <p>地址：重庆市南岸区崇文路2号（重庆邮电大学内） 400065 E-mail :redrock@cqupt.edu.cn (023-62461084)</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/return.js"></script><!-- 返回顶部 -->
+<script type="text/javascript" src="js/main.js"></script><!-- 倒计时 -->
+<script type="text/javascript" src="js/cqdis.js"></script> <!-- 重邮风采 -->
+</html>
