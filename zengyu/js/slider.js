@@ -5,6 +5,7 @@
     pic[0].style.left = 0 + "px";
     pic[1].style.left = 690 + "px";
     pic[2].style.left = 1380 + "px";
+    pic[3].style.left = 2070 + "px";
     shang.addEventListener('mouseover', function() {
       clearInterval(time);
     })
@@ -31,7 +32,7 @@
       if(value != null) {
         flag = value - 2;
       }
-      if(flag < num - 1) {
+      if(flag < num) {
         flag++; 
       }
       else {
@@ -42,16 +43,25 @@
         pic[0].style.left = 0 + "px";
         pic[1].style.left = 690 + "px";
         pic[2].style.left = 1380 + "px";
+        pic[3].style.left = 2070 + "px";
       }
       if(flag == 1) {
         pic[0].style.left = -690 + "px";
         pic[1].style.left = 0 + "px";
         pic[2].style.left = 690 + "px";
+        pic[3].style.left = 1380 + "px";
       }
       if(flag == 2) {
         pic[0].style.left = -1380 + "px";
         pic[1].style.left = -690 + "px";
         pic[2].style.left = 0 + "px";
+        pic[3].style.left = 690 + "px";
+      }
+      if(flag == 3) {
+        pic[0].style.left = -2070 + "px";
+        pic[1].style.left = -1380 + "px";
+        pic[2].style.left = -690 + "px";
+        pic[3].style.left = 0 + "px";
       }
     }
     // 反向轮播
@@ -63,23 +73,32 @@
         flag--; 
       }
       else {
-        flag = 2;
+        flag = 3;
        
       }
       if(flag == 0) {
         pic[0].style.left = 0 + "px";
         pic[1].style.left = 690 + "px";
         pic[2].style.left = 1380 + "px";
+        pic[3].style.left = 2070 + "px";
       }
       if(flag == 1) {
         pic[0].style.left = -690 + "px";
         pic[1].style.left = 0 + "px";
         pic[2].style.left = 690 + "px";
+        pic[3].style.left = 1380 + "px";
       }
       if(flag == 2) {
         pic[0].style.left = -1380 + "px";
         pic[1].style.left = -690 + "px";
         pic[2].style.left = 0 + "px";
+        pic[3].style.left = 690 + "px";
+      }
+      if(flag == 3) {
+        pic[0].style.left = -2070 + "px";
+        pic[1].style.left = -1380 + "px";
+        pic[2].style.left = -690 + "px";
+        pic[3].style.left = 0 + "px";
       }
     }
 
