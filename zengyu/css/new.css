@@ -1,0 +1,265 @@
+body {
+  font-family: "微软雅黑", "冬青黑", "宋体", Arial, "times New Roman", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.header {
+  width: 1010px;
+  height: 60px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.cqupt {
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.list {
+  margin: 0;
+  height: 60px;
+  position:relative; 
+  float: left;
+  margin-left: 95px;
+}
+.list li {
+  float:left;
+  list-style: none;
+  padding-left: 28px;
+}
+.list li a {
+  float:left; 
+  font-weight:600; 
+  color:#333333; 
+  font-size:18px; 
+  text-decoration:none; 
+  position:relative; 
+  z-index:3;
+  vertical-align: middle;
+  margin-top: 7px;
+  line-height: 45px;
+}
+.list li a:hover {
+  text-decoration:none; 
+  color:#82cb83;
+  border-bottom: 3px solid #82CB83;
+}
+
+.list a:hover > #ccc {
+  display: block;
+}
+#li_main {
+  color: #82cb83;
+  border-bottom: 3px solid #82CB83;
+}
+
+.new_log {
+  float: right;
+  color: #ffb208;
+  font-size: 16px;
+  line-height: 60px;
+  text-decoration: none;
+}
+.content {
+  width: 100%;
+  height: 1850px;
+  background: url('../image/background.png');
+  background-size: cover;
+  overflow: hidden;
+}
+.qr1 {
+  position: fixed;
+  float: left;
+  top: 135px;
+  left: 20px;
+  z-index: 1;
+
+}
+.qr2 {
+  position: fixed;
+  float: right;
+  top: 135px;
+  right: 1px;
+  z-index: 1;
+}
+.banner {
+  width: 1015px;
+  height: 750px;
+  margin: 0 auto;
+  margin-top: 38px;
+  background: url('../image/banner.png');
+  position: relative;
+}
+.time {
+  position: absolute;
+  top: 385px;
+  left: 422px;
+  width: 358px;
+  height: 45px;
+}
+#day,
+#hour,
+#minute,
+#second {
+  width: 50px;
+  height: 30px;
+  float: left;
+  margin-top: 8px;
+}
+#hour {
+  margin-left: 48.5px;
+}
+#minute {
+  margin-left: 58px;
+}
+#second {
+  margin-left: 49px;
+}
+#daysw,
+#daygw,
+#hoursw,
+#hourgw,
+#minsw,
+#mingw,
+#secsw,
+#secgw {
+  display: inline-block;
+  float: left;
+  width: 25px;
+  height: 30px;
+  background: url('../image/number.png');
+  transition: background-position 1s;
+}
+.new {
+  width: 1005px;
+  height: 985px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -190px;
+  background: url('../image/new.png');
+  overflow: hidden;
+}
+
+.str_list {
+  padding: 0;
+  width: 320px;
+  height: 55px; 
+  background-color: #ffdf4b;
+  margin: 0 auto;
+  margin-top: 138px;
+  border-radius: 55px;
+  overflow: hidden;
+}
+.str_list li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  float: left;
+  width: 160px;
+  font-size: 24px;
+  color: #f4860e;
+  line-height: 55px;
+  text-align: center;
+  cursor: pointer;
+}
+#str1 {
+  background-color: #7dd9d7;
+  color: #fff;
+  
+}
+.str_list li:hover {
+  background-color: #7dd9d7;
+  color: #fff;
+}
+.str_content {
+  width: 965px;
+  height: 740px;
+  margin: 0 auto;
+  margin-top: 40px;
+  overflow: hidden;
+  border-top: 2px #fee258 solid;
+  background-color: #fff;
+}
+.str_content > div {
+  width: 965px;
+  height: 750px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.str_hid {
+  display: none;
+}
+.img-con {
+  width: 525px;
+  height: 290px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+.img-p {
+  width: 525px;
+  height: 37px;
+  margin-top: -40px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(146, 142, 131, 0.5);
+}
+.img-con a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  line-height: 37px;
+}
+.smile-word {
+  width: 965px;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 40px;
+}
+.smile-word p {
+  padding-left: 45px;
+  line-height: 38px;
+}
+
+.go_top {
+  position: fixed;
+  width: 120px;
+  height: 120px;
+  top: 500px;
+  right: 40px;
+  cursor: pointer;
+  display: none;
+
+}
+.bottom {
+  width: 100%;
+  height: 180px;
+  background-color: #fffde7;
+  overflow: hidden;
+}
+.bot_content {
+  width: 720px;
+  height: 70px;
+  margin: 0 auto;
+  margin-top: 60px;
+  color: #eda62b;
+}
+.bot_content p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 5px;
+}
+.bot_content a {
+  color: #eda62b;
+  text-decoration: none; 
+}
