@@ -7,6 +7,7 @@ var lastSix = 0;
 var orgthreeInfo = document.querySelectorAll(".orgthreeInfo");
 
 var orgschoolList = document.querySelectorAll(".orgschoolList");
+var schoolDisplay = document.querySelectorAll(".school-display")
 //校级组织分目录
 for(var k = 0, len = orgschoolList.length; k < len; k ++) {
     orgschoolList[k].addEventListener("click", function(k) {
@@ -16,6 +17,8 @@ for(var k = 0, len = orgschoolList.length; k < len; k ++) {
             }  else {
                 orgschoolList[lastSix].style.backgroundImage = "url(../images/schoollist1.png)";
             }
+            schoolDisplay[lastSix].style.display = "none";
+            schoolDisplay[k].style.display = "block";
             orgschoolList[k].style.backgroundImage = "url(../images/xiaoji.png)";
             lastSix = k;
         })
@@ -36,34 +39,6 @@ for(var i = 0, len = listLeft.length; i < len; i ++) {
         })        
     }(i))
 }
-//校级组织三个li
-for(var j = 0, len = orgthree.length; j < len; j ++) {
-    orgthree[j].addEventListener("click", function(j) {
-        return (function() {
-            css(orgthree[lastthree], {
-               "background-image" :"url(../images/orgbak.gif)",
-               color: "#ffb31f",
-               "margin-top": 0,
-               height: "45px",
-               width: "303px",
-               "margin-left":"10px",
-               "line-height": "45px"
-            });
-            orgthreeInfo[lastthree].style.fontSize = "20px";
-            orgthreeInfo[j].style.fontSize = "22px";
-            css(orgthree[j], {
-               "background-image" :"url(../images/orgclick.png)",
-               color: "#faac3a",
-               "margin-top": "-15px",
-               height: "60px",
-               width:  "336px",
-               "line-height":"60px"
-            })
-            lastthree = j;
-        })
-        
-    }(j))
-}
 
 function css (el, obj) {
     if (typeof el !== 'object' || typeof obj !== 'object') {
@@ -76,28 +51,39 @@ function css (el, obj) {
     }
     el.style.cssText = str;
 }
-var orgredRock = document.querySelectorAll(".orgredRock")[0];
-var orgstuTeam = document.querySelectorAll(".orgstuTeam")[0];
-var orgSchool = document.querySelectorAll(".orgSchool")[0];
-var schoolOrg = document.querySelector("#schoolOrg");
-var stuTeam = document.querySelector("#stuTeam");
-var REDrock = document.querySelector("#REDrock");
-
-REDrock.addEventListener('click', function() {
-    orgstuTeam.style.display = "none";   
-    orgredRock.style.display = "block"; 
-    orgstuTeam.style.display = "none";  
-})
-schoolOrg.addEventListener('click', function() {
-    orgstuTeam.style.display = "none";   
-    orgredRock.style.display = "none"; 
-    orgSchool.style.display = "block";  
-})
-stuTeam.addEventListener('click', function() {
-    orgstuTeam.style.display = "block";   
-    orgredRock.style.display = "none"; 
-    orgSchool.style.display = "none";  
-})
+(function() {
+    var orgthree = document.querySelectorAll(".orgthree");
+    var orgDis = document.querySelectorAll(".orgDis");
+    var last = 0;
+    for(var i = 0, len = orgthree.length; i < len; i ++) {
+        orgthree[i].addEventListener("click", function(i) {
+            return (function() {
+                orgDis[last].style.display = "none";
+                orgDis[i].style.display = "block";
+                css(orgthree[last], {
+                   "background-image" :"url(./images/orgbak.gif)",
+                   color: "#ffb31f",
+                   "margin-top": 0,
+                   height: "45px",
+                   width: "303px",
+                   "margin-left":"10px",
+                   "line-height": "45px"
+                });
+                orgthreeInfo[last].style.fontSize = "20px";
+                orgthreeInfo[i].style.fontSize = "22px";
+                css(orgthree[i], {
+                   "background-image" :"url(./images/orgclick.png)",
+                   color: "#faac3a",
+                   "margin-top": "-15px",
+                   height: "60px",
+                   width:  "336px",
+                   "line-height":"60px"
+                })
+                last = i;
+            })        
+        }(i))
+    }
+}())
 
 var goodvideoLunbo = document.querySelectorAll(".good-video-lunbo");
 var goodstudentlunbo = document.querySelectorAll(".good-student-lunbo");
@@ -134,3 +120,21 @@ function turnAll(box, turnimg, left, right) {
 turnAll(videoBox, goodvideoLunbo, butLeft[0], butRight[0]);
 turnAll(studentBox, goodstudentlunbo, butLeft[1], butRight[1]);
 turnAll(teacherBox, goodteacherlunbo, butLeft[2], butRight[2]);
+
+
+//宣传视频介绍
+var eachVideo = document.querySelectorAll(".eachvideo");
+var videoHidden = document.querySelectorAll(".video-hidden");
+for(var h = 0, len = eachVideo.length; h < len; h ++) {
+    eachVideo[h].addEventListener('mouseover', function(h) {
+        return (function() {
+            videoHidden[h].style.display = "block";
+        })
+    }(h))
+    eachVideo[h].addEventListener('mouseout', function(h) {
+        return (function() {
+            videoHidden[h].style.display = "none";
+        })
+    }(h))
+}
+
