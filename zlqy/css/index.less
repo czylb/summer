@@ -24,6 +24,7 @@ p {
     padding : 0;
     font-family: "微软雅黑","冬青黑";
     background-repeat: no-repeat;
+
 }
 a {
    text-decoration: none;
@@ -53,15 +54,15 @@ nav {
                 color:#82CB83; 
             }
             a{
+                margin-left: 40px;
                 box-sizing: border-box;
                 display: block;
                 float: left;
-                height: 60px;
-                width: 102px;
                 font-size: 18px;
                 color: black;
                 line-height: 60px;
                 text-align: center;
+                font-weight: bold;
             }
             a:hover {
                 cursor: pointer;
@@ -70,6 +71,30 @@ nav {
             }
             a:first-child {
                 border-bottom: 5px solid #82CB83;
+            }
+            #a1 {
+                width: 41px;
+                height: 55px;
+            }
+             #a2 {
+                width: 75px;
+                height: 55px;
+            }
+            #a3 {
+                width: 75px;
+                height: 55px;
+            }
+            #a4 {
+                width: 75px;
+                height: 55px;
+            }
+            #a5 {
+                width: 98px;
+                height: 55px;
+            }
+            #a6 {
+                width: 75px;
+                height: 55px;
             }
             span {
                 display: block;
@@ -198,6 +223,23 @@ nav {
             }
         }
     }
+}
+ #yy {
+        position: absolute;
+        top: 108px;
+        left: 12px;
+    }
+#yy1 {
+       position: absolute;
+       margin-top: 81px;
+       margin-left: 9px;
+        
+    }
+#yy2 {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 165px;
+    z-index: 0;
 }
 .mapWhole {
     position: relative;
@@ -384,7 +426,8 @@ nav {
                         font-size: 36px;
                         cursor: pointer; 
                         line-height: 34px;
-                        margin-left: 4.5px;
+                        margin-left: 4px;
+                        margin-top: 1px;
                         color: #F88206;
                     }
                     .clo:hover {
@@ -514,6 +557,7 @@ nav {
     min-width: @width;
     height: 625px;
     .midContainer {
+        z-index: 1000;
         margin: 0 auto;
         width: @width;
         height: 625px;
@@ -575,7 +619,7 @@ nav {
                     width: 245px;
                     height: 120px;
                     p { 
-                        text-align: center;
+                        // text-align: center;
                         color: #666666;
                         font-size: 14px;
                         line-height: 25px;
@@ -642,10 +686,11 @@ nav {
             img {
                 position: relative;
                 top: 20px;
-                left: 22px;
+                left: 18px;
             }
         }
         .sisbot {
+
             margin-top: -30px;
             width:@width;
             height: 257px;
@@ -656,8 +701,8 @@ nav {
                 margin-top: 65px;
                 width: 610px;
                 height: 257px;
-                text-align: center;
-                p {
+                p {z-index: 5;
+                    margin-left: 40px;
                     font-size: 14px;
                     line-height: 25px;
                     color: #666666;
@@ -671,8 +716,8 @@ nav {
                 background-image: url(../images/buttonback.png);
                 a {
                     position: relative;
-                    top: 17px;
-                    left: -72px;
+                    top: 18px;
+                    left: 50px;
                     color: white;
                     font-size: 18px;
                 }
@@ -682,6 +727,11 @@ nav {
             }
         }
     }
+}
+#yy3 {
+    position: absolute;
+    margin-top: -100px;
+    z-index: 0;
 }
 .redrock {
     margin: 0 auto;
@@ -704,6 +754,7 @@ nav {
             }
         }
         .redbot {
+            z-index: 1000;
             margin-top: -30px;
             width:@width;
             height: 257px;
